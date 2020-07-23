@@ -1,21 +1,21 @@
-Zandagort `s8 szerver, magyar kód`
+잔다고트 `s8 szerver, magyar kód`
 ==================================
 
-A [Zandagort](http://zandagort.hu/) egy ingyenes böngészős online sci-fi stratégiai játék, amit 4 éven át fejlesztettem és üzemeltettem, míg utóbbiba bele nem tört a bicskám. Ekkor fogtam, és kiadtam az egészet nyílt forráskóddal, hogy bárki indíthasson saját Zandagort szervert, vagy írhasson belőle totál más játékokat.
+Zandagort 후자는 주머니 칼에 침입하지 않았지만 내가 개발 및 이전에 사년을 위해 운영하는 무료 온라인 브라우저 공상 과학 전략 게임. 그때는 누구나 오픈 소스로 모든 것을 공개하고 공개하여 누구나 Zandagor 서버를 시작하거나 다른 게임을 작성할 수있게되었습니다.
 
-Ha ezt a szöveget olvasod, kb a következő lehetőségeid vannak:
+이 텍스트를 읽고 있다면 다음과 같은 옵션이 있습니다:
 
-* letöltöd a kódot, és tanulsz belőle
-* letöltöd a kódot, és indítasz magadnak localhost-ban egy privát Zandagort szervert
-* letöltöd a kódot, és indítasz egy publikus Zandagort szervert
-* letöltöd és átírod a kódot, és indítasz egy továbbfejlesztett Zandagort szervert
-* letöltöd és átírod a kódot, és csinálsz belőle egy saját játékot
+* 코드를 다운로드하고 배우십시오
+* 코드를 다운로드하고 localhost에서 개인 Zandagort 서버를 시작하십시오.
+* 코드를 다운로드하고 공개 Zandagor 서버를 시작합니다
+* 코드를 다운로드하고 다시 작성하고 향상된 Zandagor 서버를 시작합니다
+* 코드를 다운로드하고 다시 작성하여 자신의 게임으로 만듭니다.
 
-A teljes anyag ún. MIT licensszel van kiadva (lásd `LICENSE.md`), ami kb azt jelenti, hogy azt csinálsz az egésszel, amit akarsz, kiadhatod, eladhatod, átírhatod, az egyetlen követelmény, hogy a `LICENSE.md`-t (benne a copyright részt, miszerint az eredetit én írtam) valamilyen formában mindig mellékeld.
+전체 재료는 MIT 라이센스에 따라 라이센스가 부여되며 (참조 LICENSE.md), 원하는 것은 무엇이든 원하는대로 게시, 판매, 재 작성할 수 있음을 의미하며, 유일한 요구 사항은 LICENSE.md(원본을 작성한 저작권 섹션 포함) 일부 형식이어야합니다. 항상 첨부하십시오.
 
-Ha ennél részletesebben érdekel a dolog, olvass utána vagy keress egy szerzői joggal foglalkozó jogászt. Ez esetben amúgy észreveheted, hogy a licensz csak részben MIT, részben CC-BY, ami nagyjából ugyanaz, csak képekre és szövegekre kitalálva. Képek alatt az itt (GitHub-on) mellékelt, letölthető képekről van szó, vagyis nem mindenről, ami valaha megjelent a Zandagortban.
+이에 대해 더 자세히 알고 싶다면 저작권 변호사를 읽거나 찾으십시오. 이 경우 어쨌든 라이센스는 이미지와 텍스트에 대해서만 라이센스가 부분적으로 MIT, 부분적으로 CC-BY이며 거의 동일하다는 것을 알 수 있습니다. 아래 그림은 여기 (GitHub에) 첨부 된 다운로드 가능한 사진입니다. 즉, Zandagort에 나타난 모든 것이 아닙니다.
 
 
-## Hogyan telepítsd a Zandagortot?
+## 잔다고트를 설치하는 방법?
 
-Részletesen lásd az INSTALL.md fájlban.
+자세한 내용은 INSTALL.md를 참조하십시오.
