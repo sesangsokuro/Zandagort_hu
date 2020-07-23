@@ -1,13 +1,13 @@
-Zandagort telepítési útmutató
+잔 다르고트 설치 안내서
 =============================
 
-**Fontos megjegyzés**: Mivel az adatbázis lényegi része `MEMORY` táblákban van, ezek a szerver minden újraindulásakor elvesznek. Ha localhost-ban akarsz privát Zandagort szervert futtatni, erre gondolnod kell, hogy amikor éjszakára lekapcsolod a gépet, minden el fog veszni. Ha ezt nem akarod, vagy dump-old mindig az adatbázist kikapcsolás előtt, és töltsd vissza bekapcsolás után, vagy cseréld le a `MEMORY` táblákat `MyISAM` táblákra (amitől viszont lassabb lesz a rendszer). Publikus szervernél pedig bár elvileg éjjel-nappal fut a szerver, de ha csak egy ici-pici újraindulás is történik, akkor nem csak a te játékod ment tönkre, hanem mindenkié, aki játszik. Szóval menteni, menteni, menteni!
+** 중요 사항 ** : 데이터베이스의 상당 부분이 'MEMORY'테이블에 있기 때문에 서버를 다시 시작할 때마다 손실됩니다. localhost에서 개인 Zandagort 서버를 실행하려면 밤 동안 컴퓨터를 종료하면 모든 것이 손실된다는 점을 명심해야합니다. 이를 원하지 않으면 데이터베이스를 종료하기 전에 덤프 한 후 전원을 켠 후 다시로드하거나, MEMORY 테이블을 MyISAM 테이블로 바꾸십시오 (시스템 속도가 느려짐). 퍼블릭 서버의 경우 원칙적으로 서버는 24 시간 내내 작동하지만 ici-tiny 재시작 만 발생하면 게임은 망가질뿐 아니라 서버를 플레이하는 모든 사람이 망칠 것입니다. 저장, 저장, 저장!
 
-Megjegyzés: A lentiekben *[opcionális]*-ként vannak jelölve azok a részek, amik nélkül is el fog indulni a játék, legfeljebb nem lesz biztonságos és hibamentes. Természetesen ezekkel együtt sem garantált semmi, lásd az `"AS IS"` szakaszt az MIT licenszben.
+참고 : 다음에서 게임이 시작되지 않는 * [선택 사항] *으로 표시된 부분은 안전하고 오류가없는 상태입니다. 물론 이것들에 대해 보장 된 것은 없습니다. MIT 라이센스의 ""있는 그대로 "섹션을 참조하십시오.
 
-Megjegyzés 2: A lentiekben ha `.php` fájlra van hivatkozás, az (szinte) mindig a `www` könyvtárban található.
+참고 2 : 다음에서`.php` 파일에 대한 링크가 있다면, 항상`www` 디렉토리에 있습니다.
 
-Megjegyzés 3: Ha nem a megadott sorrendben haladsz, előfordulhatnak kisebb problémák. Például még be sem állítottál mindent, és már regisztrált valaki (mert túl korán tetted publikussá a `www` könyvtárat).
+참고 3 : 지정된 순서대로 진행하지 않으면 사소한 문제가 발생할 수 있습니다. 예를 들어, 아직 모든 것을 설정하지 않았으며 누군가 이미 www 디렉토리를 너무 일찍 등록했기 때문에 이미 등록했습니다.
 
 ## 0. Apache-MySQL-PHP
 
@@ -32,13 +32,13 @@ A `mysql` könyvtárban csomagold ki a két dump fájlt.
 
 ### Arial
 
-A játék a tőzsdei grafikonok, minitérkép, satöbbik felirataihoz az [Arial](http://en.wikipedia.org/wiki/Arial) betűtípust használja (melynek nagy előnye, hogy keskeny, így kis helyen sok betű-számjegy elfér). Hogy ezek működjenek, az szükséges, hogy a `www/img` könyvtárban legyen egy példány az `arial.ttf` fájlból. Mivel az Arial *nem* szabadon felhasználható font, hanem a [Monotype Corporation](http://en.wikipedia.org/wiki/Monotype_Corporation) védett tulajdona, ezért elvileg nem rakhatom bele a letölthető csomagba. Innentől kezdve két lehetőséged van:
+이 게임은 주식형 차트, 미니 맵 등의 캡션을 위해 [Arial] (http://en.wikipedia.org/wiki/Arial) 글꼴을 사용합니다 (좁은 장점이 있으므로 작은 공간에 많은 문자와 숫자를 넣을 수 있음). 이것들을 사용하려면, www / img 디렉토리에`arial.ttf` 파일의 사본이 있어야합니다. Arial *는 사용하기 쉬운 글꼴이 아니라 [Monotype Corporation] (http://en.wikipedia.org/wiki/Monotype_Corporation)의 독점 재산이므로 원칙적으로 다운로드 패키지에 포함시킬 수 없습니다. 지금부터 두 가지 옵션이 있습니다.
 
-1. Valahonnan beszerzed az `arial.ttf`-et (például a `Windows/Fonts` könyvtárból a gépedről), bemásolod a `www/img` könyvtárba, és vállalod a kockázatot, hogy egy éjjel rád töri az ajtót a Monotype-kommandó.
+1. 컴퓨터의 Windows / Fonts 디렉토리와 같은 곳에서`arial.ttf`를 가져 와서`www / img` 디렉토리로 복사 한 다음 Monotype 명령이 문을 밤새 깨뜨릴 위험이 있습니다. .
 
-2. Vagy keresel egy [alternatív, szabadon felhasználható fontot](http://en.wikipedia.org/wiki/Arial#Free_alternatives), azt másolod be a `www/img` könyvtárba, és az összes hivatkozást kicseréled (ez nem sok, mert a legtöbb grafikus szöveget kiíró szkript elején van egy `$font_cim='img/arial.ttf';` sor, és csak ezt kell lecserélni).
+2. 또는 [대체 사용하기 쉬운 글꼴] (http://en.wikipedia.org/wiki/Arial#Free_alternatives)을 찾아서`www / img` 디렉토리에 복사 한 다음 모든 링크를 바꾸십시오 (별로 크지 않음) 왜냐하면 대부분의 스크립트에는 처음에`$ font_cim = 'img / arial.ttf';`줄이 있고 교체 만하면되기 때문입니다).
 
-A harmadik lehetőség az lenne, hogy hagyod a francba, max néhány dolog nem működik fullosan. De vedd figyelembe, hogy ez a regisztrációs kapcsára (CAPTCHA) is vonatkozik, így senki nem fog tudni regisztrálni.
+세 번째 옵션은 그것을 지옥에 두는 것입니다. 최대 몇 가지가 완벽하게 작동하지 않습니다. 그러나 이것은 귀하의 등록 링크 (CAPTCHA)에도 적용되므로 아무도 등록 할 수 없습니다.
 
 ### JS-kód [opcionális]
 
